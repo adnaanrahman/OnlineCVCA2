@@ -16,26 +16,33 @@
 
 <body>
     <main>
-        <div class="container">
-            <!-- Navbar -->
-            <nav id="navbar-main" class="navbar navbar-light bg-light px-3 fixed-top justify-content-center">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#wk" class="nav-link">Work Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#previousprojects" class="nav-link">Previous Projects</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Navbar -->
-        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-light fixed-top">
+            <div class="container">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav navbarNav nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#wk" class="nav-link">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#previousprojects" class="nav-link">Previous Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
         <div data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="0" class="scrollspy-example"
             tabindex="0">
             <header>
@@ -71,11 +78,11 @@
                                 <div class="form-outline">
                                     <label class="form-label" for="typeEmail">Email input</label>
                                     <input type="email" id="typeEmail" class="form-control" />
-                                  </div>
+                                </div>
                                 <div class="form-outline">
                                     <label class="form-label" for="typeNumber">Phone Number</label>
                                     <input type="number" id="typeNumber" class="form-control" />
-                                  </div>
+                                </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">Your Message</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
