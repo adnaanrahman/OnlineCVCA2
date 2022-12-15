@@ -19,7 +19,7 @@
         <div class="container">
             <!-- Navbar -->
             <nav id="navbar-main" class="navbar navbar-light bg-light px-3 fixed-top justify-content-center">
-                <ul class="nav nav-pills ">
+                <ul class="nav nav-pills">
                     <li class="nav-item">
                         <a href="#" class="nav-link active">Home</a>
                     </li>
@@ -27,13 +27,10 @@
                         <a href="#wk" class="nav-link">Work Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#ed" class="nav-link">Education</a>
+                        <a href="#education" class="nav-link">Education</a>
                     </li>
                     <li class="nav-item">
                         <a href="#previousprojects" class="nav-link">Previous Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contact Me</a>
                     </li>
                 </ul>
             </nav>
@@ -41,26 +38,63 @@
         </div>
         <div data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="0" class="scrollspy-example"
             tabindex="0">
-            <div class="container">
-                <!-- Hero -->
-                <div class="p-5 text-center">
-                    <img src="images/1657841014083.jfif" alt="Avatar" class="avatar">
-                    <h1>Adnaan Rahman</h1>
-                    <p class="lead">
-                        I am a Fourth Year Computer Science student at Technological University Dublin - Tallaght
-                        Campus.
-                    </p>
+            <header>
+                <div class="container">
+                    <!-- Hero -->
+                    <div class="p-5 text-center">
+                        <img src="images/1657841014083.jfif" alt="Avatar" class="avatar mt-3">
+                        <h1>Adnaan Rahman</h1>
+                        <p class="lead">
+                            I am a Fourth Year Computer Science student at Technological University Dublin - Tallaght
+                            Campus.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#contact-modal">
+                            Contact Me
+                        </button>
+
+                    </div>
+                    <!-- Hero -->
                 </div>
-                <!-- Hero -->
-            </div>
             </header>
 
-            <div id='wk' class="container mt-5">
+            <!--Modal-->
+            <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal-title">Contact Me</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="model-body">
+                            <form class="p-2 mb-2">
+                                <div class="form-outline">
+                                    <label class="form-label" for="typeEmail">Email input</label>
+                                    <input type="email" id="typeEmail" class="form-control" />
+                                  </div>
+                                <div class="form-outline">
+                                    <label class="form-label" for="typeNumber">Phone Number</label>
+                                    <input type="number" id="typeNumber" class="form-control" />
+                                  </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Your Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='wk' class="container">
                 <div class="row">
                     <div class="col">
                         <h3 class="mb-3">Work Experience</h3>
-                        <div class="card mb-3">
-                            <div class="card-body">
+                        <div class="card shadow p-3 mb-5 bg-white rounded">
+                            <div class="card-body ">
                                 <div class="mx-3">
                                     <h4><img src="images/fidelityinvestments.png" alt="Fidelity Investments"
                                             class="fi">Fidelity
@@ -80,7 +114,7 @@
 
                             </div>
                         </div>
-                        <div class="card mb-3">
+                        <div class="card shadow p-3 mb-5 bg-white rounded">
                             <div class="card-body">
                                 <div class="mx-3">
                                     <h4><img src="images/twitterlogo.jpg" alt="Twitter" class="twitter">Twitter
@@ -106,67 +140,118 @@
                 </div>
             </div>
 
-            <div id='ed' class="container mt-5">
+            <div id="education" class="container">
                 <h3>Education</h3>
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="images/tudlogo.png" class="img-fluid" alt="...">
-                      </div>
-                      <div class="col-md-8">
-                        <div class="card-body bg-light">
-                          <h5 class="card-title"><a href="https://www.tudublin.ie/" target="_blank">Technological University Dublin</a></h5>
-                          <p class="card-text">Bsc Computing Science with Software Development</p>
+                        <div class="col-md-4">
+                            <img src="images/tudlogo.png" class="img-fluid" alt="...">
                         </div>
-                      </div>
+                        <div class="col-md-8">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title"><a href="https://www.tudublin.ie/" target="_blank">Technological
+                                        University Dublin</a></h5>
+                                <p class="card-text">Bsc Computing Science with Software Development</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-header">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFirstYear" aria-expanded="false"
+                                aria-controls="collapseFirstYear">
                                 First Year
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                            </button>
+                            <ul class="list-group list-group-flush collapse collapse-horizontal" id="collapseFirstYear">
+                                <li class="list-group-item">Computer Architecture</li>
+                                <li class="list-group-item">Social Media Communications</li>
+                                <li class="list-group-item">Critical Skills Development</li>
+                                <li class="list-group-item">Database Fundamentals</li>
+                                <li class="list-group-item">Business & Information Sys</li>
+                                <li class="list-group-item">Discrete Mathematics 1</li>
+                                <li class="list-group-item">Operating Syst Fundamentals</li>
+                                <li class="list-group-item">Statistics</li>
+                                <li class="list-group-item">Software Development 1</li>
+                                <li class="list-group-item">Software Development 2</li>
+                                <li class="list-group-item">Systems Analysis</li>
+                                <li class="list-group-item">Visual Design & User Exp</li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-header">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSecondYear" aria-expanded="false"
+                                aria-controls="collapseSecondYear">
                                 Second Year
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                            </button>
+                            <ul class="list-group list-group-flush collapse collapse-horizontal"
+                                id="collapseSecondYear">
+                                <li class="list-group-item">Database Admin & Analysis</li>
+                                <li class="list-group-item">Advanced Database Technologies</li>
+                                <li class="list-group-item">Discrete Mathematics 2</li>
+                                <li class="list-group-item">Management Science</li>
+                                <li class="list-group-item">Network Fundementals</li>
+                                <li class="list-group-item">Routing & Switching</li>
+                                <li class="list-group-item">Project</li>
+                                <li class="list-group-item">Software Qual Assurance & Testing</li>
+                                <li class="list-group-item">Information Security</li>
+                                <li class="list-group-item">Software Development 3</li>
+                                <li class="list-group-item">Software Development 4</li>
+                                <li class="list-group-item">Client side Web Development</li>
+
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="card" style="width: 18rem;">
-                            <div class="card-header">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThirdYear" aria-expanded="false"
+                                aria-controls="collapseThirdYear">
                                 Third Year
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">An item</li>
-                                <li class="list-group-item">A second item</li>
-                                <li class="list-group-item">A third item</li>
+                            </button>
+                            <ul class="list-group list-group-flush collapse collapse-horizontal" id="collapseThirdYear">
+                                <li class="list-group-item">Data Structures & Algorithms</li>
+                                <li class="list-group-item">Cloud Service & Distrib Computing</li>
+                                <li class="list-group-item">Big Data Technologies</li>
+                                <li class="list-group-item">EXPERIENTAL LEARNING</li>
+                                <li class="list-group-item">Innovation & Entrepreneurshp</li>
+                                <li class="list-group-item">Operating Systems</li>
+                                <li class="list-group-item">Project</li>
+                                <li class="list-group-item">Server-side Web Development</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFourthYear" aria-expanded="false"
+                                aria-controls="collapseFourthYear">
+                                Fourth Year
+                            </button>
+                            <ul class="list-group list-group-flush collapse collapse-horizontal"
+                                id="collapseFourthYear">
+                                <li class="list-group-item">Project</li>
+                                <li class="list-group-item">Enterprise Application Development</li>
+                                <li class="list-group-item">Information Management</li>
+                                <li class="list-group-item">Interactive Media Design</li>
+                                <li class="list-group-item">Enterprise Application Architecture</li>
+                                <li class="list-group-item">DevOps</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id='previousprojects' class="container mt-5">
+            <div id="previousprojects" class="container">
                 <h3>Previous Projects</h3>
                 <div class="row">
                     <div class="col-lg-3">
-                        <div class="card m-b-3">
-                            <div class="card-body">
+                        <div class="card shadow p-3 mb-5 bg-white rounded">
+                            <div class="card-body ">
                                 <h5 class="card-title">2nd Year Project - Hiring Agency</h5>
                                 <p class="card-text">This website has been designed so it can provide a platform for
                                     employers
@@ -181,8 +266,8 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card m-b-3">
-                            <div class="card-body">
+                        <div class="card shadow p-3 mb-5 bg-white rounded">
+                            <div class="card-body ">
                                 <h5 class="card-title">
                                     Online Transaction System using HTML and Django</h5>
                                 <p class="card-text">As part of our course, we were given a project to do which was to
