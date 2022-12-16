@@ -29,7 +29,7 @@
                             <a href="#" class="nav-link active">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#wk" class="nav-link">Work Experience</a>
+                            <a href="#workexperience" class="nav-link">Work Experience</a>
                         </li>
                         <li class="nav-item">
                             <a href="#education" class="nav-link">Education</a>
@@ -87,7 +87,7 @@
                                     <label for="exampleFormControlTextarea1">Your Message</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                <button onclick="buttonSubmit()" type="submit" class="btn btn-primary mt-3">Submit</button>
                             </form>
                         </div>
 
@@ -96,7 +96,8 @@
 
             </div>
 
-            <div id='wk' class="container">
+            <!--Work Experience Section-->
+            <div id='workexperience' class="container">
                 <div class="row">
                     <div class="col">
                         <h3 class="mb-3">Work Experience</h3>
@@ -104,8 +105,8 @@
                             <div class="card-body ">
                                 <div class="mx-3">
                                     <h4><img src="images/fidelityinvestments.png" alt="Fidelity Investments"
-                                            class="fi">Fidelity
-                                        Investments</h4>
+                                            class="fi"><a href="https://www.fidelityinvestments.ie" target="_blank">Fidelity
+                                        Investments</a></h4>
                                     <div><strong>Internship</strong></div>
                                     <div><strong>Jan 2022 - Aug 2022</strong></div>
                                     <ul>
@@ -124,8 +125,7 @@
                         <div class="card shadow p-3 mb-5 bg-white rounded">
                             <div class="card-body">
                                 <div class="mx-3">
-                                    <h4><img src="images/twitterlogo.jpg" alt="Twitter" class="twitter">Twitter
-                                    </h4>
+                                    <h4><img src="images/twitterlogo.jpg" alt="Twitter" class="twitter"><a href="https://careers.twitter.com/en.html" target="_blank">Twitter</a></h4>
                                     <div><strong>Nov 2016 - May 2017</strong></div>
                                     Transition Year workshop in collaboration with CoderDojo and Twitter:
                                     <ul>
@@ -147,6 +147,7 @@
                 </div>
             </div>
 
+            <!--Education Section-->
             <div id="education" class="container">
                 <h3>Education</h3>
                 <div class="card mb-3" style="max-width: 540px;">
@@ -253,6 +254,7 @@
                 </div>
             </div>
 
+            <!--Previous Projects Section-->
             <div id="previousprojects" class="container">
                 <h3>Previous Projects</h3>
                 <div class="row">
@@ -294,7 +296,7 @@
 
 
     <!-- My JavaScript file -->
-    <script src="scripts/myScripts.js"></script>
+    <script src="scripts/myScript.js"></script>
 
     <!-- Bootscript JavaScript file -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
